@@ -1,0 +1,22 @@
+{
+  "name": "the-graph-india",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ the-graph-india",
+    "create-local": "graph create --node http://localhost:8020/ the-graph-india",
+    "remove-local": "graph remove --node http://localhost:8020/ the-graph-india",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 the-graph-india",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.67.4",
+    "@graphprotocol/graph-ts": "0.32.0",
+    "graphql": "^16.8.1",
+    "urql": "^3.0.3"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
+}
